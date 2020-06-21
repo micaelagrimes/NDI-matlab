@@ -207,7 +207,7 @@ classdef ndi_daqreader_mfdaq_stimulus_vhlabvisspike2 < ndi_daqreader_mfdaq & ndi
 			%
 			% PARAMETERS = NDI_GET_STIMULUS_PARAMETERS(NDI_DAQSYSTEM_STIMULUS_OBJ, EPOCHFILES)
 			%
-			% Returns the parameters (array, struct array, or cell array) associated with the
+			% Returns the parameters (cell array of structs) associated with the
 			% stimulus or stimuli that were prepared to be presented in epoch with file list EPOCHFILES.
 			%
 			% In this case, it is the parameters of NEWSTIM stimuli from the VHLab visual stimulus system.

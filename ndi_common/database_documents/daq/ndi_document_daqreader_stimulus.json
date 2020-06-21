@@ -1,0 +1,16 @@
+{
+	"document_class": {
+		"definition":						"$NDIDOCUMENTPATH\/daq\/ndi_document_daqreader_stimulus.json",
+		"validation":						"$NDISCHEMAPATH\/daq\/ndi_document_daqreader_stimulus_schema.json",
+		"class_name":						"ndi_document_daqreader_stimulus",
+		"property_list_name":					"daqreader_stimulus",
+		"class_version":					1,
+		"superclasses": [
+			{ "definition":					"$NDIDOCUMENTPATH\/ndi_document.json" },
+			{ "definition":					"$NDIDOCUMENTPATH\/daq\/ndi_document_daqreader.json" }
+		]
+        },
+	"daqreader_stimulus": {
+		"tsv_fileparameters":					""
+	}
+}
