@@ -60,6 +60,7 @@ function test_ndi_daqreader_documents
 
 	for i=1:numel(daqreader_docs),
 		dr_fromdoc{i} = ndi_document2ndi_object(daqreader_docs{i}{1},E);
+		%dr_fromdoc{i},dr{i},dr_doc{i}.document_properties,
 		if eq(dr_fromdoc{i},dr{i}),
 			disp(['Daqreader number ' int2str(i) ' matches.']);
 		else,
@@ -67,3 +68,5 @@ function test_ndi_daqreader_documents
 		end;
 	end;
 end
+
+

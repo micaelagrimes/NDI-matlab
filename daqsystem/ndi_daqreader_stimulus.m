@@ -1,7 +1,7 @@
 classdef ndi_daqreader_stimulus < ndi_daqreader
 % NDI_DAQREADER_STIMULUS - an abstract NDI_DAQREADER class for stimulators
 
-	properties (GetAcces=public,SetAccess=protected)
+	properties (GetAccess=public,SetAccess=protected)
 		tsv_fileparameters   % optional regular expression to search within epochfiles for a
 		                     %   tab-separated-value file that describes stimulus
 		                     %   parameters
@@ -92,13 +92,12 @@ classdef ndi_daqreader_stimulus < ndi_daqreader
 			% Creates an NDI_DOCUMENT object DOC that represents the
 			%    NDI_DAQREADER object.
 				ndi_document_obj = ndi_document('ndi_document_daqreader_stimulus.json',...
-					'daqreader.ndi_daqreader_class',class(ndi_daqreader_obj),...
+					'daqreader.ndi_daqreader_class',class(ndi_daqreader_stimulus_obj),...
+					'daqreader_stimulus.ndi_daqreader_stimulus_class',class(ndi_daqreader_stimulus_obj),...
 					'daqreader_stimulus.tsv_fileparameters', ndi_daqreader_stimulus_obj.tsv_fileparameters, ...
-					'ndi_document.id', ndi_daqreader_obj.id());
+					'ndi_document.id', ndi_daqreader_stimulus_obj.id());
 		end; % newdocument()
-
 
 	end; % methods
 end % classdef
-
 

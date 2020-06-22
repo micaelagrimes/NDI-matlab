@@ -21,7 +21,7 @@
 % See also: NDI_DAQREADER_MFDAQ/NDI_DAQREADER_MFDAQ
 %
 
-classdef ndi_daqreader_mfdaq < ndi_daqreader
+classdef ndi_daqreader_mfdaq < ndi_daqreader_stimulus
 	properties (GetAccess=public,SetAccess=protected)
 
 	end
@@ -36,7 +36,7 @@ classdef ndi_daqreader_mfdaq < ndi_daqreader
 			%
 			%  Creates a new NDI_DAQREADER_MFDAQ object.
 			%  This is an abstract class that is overridden by specific devices.
-				obj = obj@ndi_daqreader(varargin{:});
+				obj = obj@ndi_daqreader_stimulus(varargin{:});
 		end; % ndi_daqreader_mfdaq
 
 		% functions that override ndi_epochset

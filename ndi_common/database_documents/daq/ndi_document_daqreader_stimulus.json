@@ -11,6 +11,7 @@
 		]
         },
 	"daqreader_stimulus": {
+		"ndi_daqreader_stimulus_class":				"ndi_daqreader_stimulus",
 		"tsv_fileparameters":					""
 	}
 }

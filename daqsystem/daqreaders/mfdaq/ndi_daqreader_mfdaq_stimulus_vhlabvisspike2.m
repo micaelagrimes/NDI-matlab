@@ -29,7 +29,7 @@ classdef ndi_daqreader_mfdaq_stimulus_vhlabvisspike2 < ndi_daqreader_mfdaq & ndi
 			%
 			%  Creates a new NDI_DAQSYSTEM_MFDAQ object with NAME, and FILENAVIGATOR.
 			%  This is an abstract class that is overridden by specific devices.
-				obj = obj@ndi_daqreader_mfdaq(varargin{:});
+				obj = obj@ndi_daqreader_stimulus(varargin{:});
 		end; % ndi_daqreader_mfdaq_stimulus_vhlabvisspike2()
 
 		function ec = epochclock(ndi_daqreader_mfdaq_stimulus_vhlabvisspike2_obj, epochfiles)
